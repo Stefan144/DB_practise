@@ -91,14 +91,20 @@ CREATE TABLE film_actors (
 
 1)Вставим заранее подготовленный датасет по режиссерам в формате csv:
 ```sql
-COPY director(director_name,director_last_name) 
+COPY director(director_name, director_last_name) 
 FROM '/home/stefan/director_data.csv' DELIMITER ','CSV HEADER;
 ```
 2)Тоже самое сделаем для стран:
 ```sql
-COPY director(director_name,director_last_name) 
-FROM '/home/stefan/director_data.csv' DELIMITER ','CSV HEADER;
+COPY countries(country_name, average_gdp) 
+FROM '/home/stefan/countries.csv' DELIMITER ','CSV HEADER;
 ```
+P.S. В процессе вставки, оказалось, что smallint типа недостаточно, и пришлось поменять его для столбца average_gdp в таблице
+countries с помощью, опять же, DML оператора:
+```sql
+ALTER TABLE countries ALTER average_gdp TYPE int;
+```
+
 ### Примеры работы
 
 
