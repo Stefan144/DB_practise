@@ -111,5 +111,5 @@ ALTER TABLE countries ALTER average_gdp TYPE int;
 
 Выберем фамилии всех режиссеров по имени Боб:
 
-![](http://imgur.com/m634OYH)
+![](http://i.imgur.com/m634OYH.png?1)
 
