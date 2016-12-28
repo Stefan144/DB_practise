@@ -107,7 +107,7 @@ countries с помощью, опять же, DML оператора:
 ALTER TABLE countries ALTER average_gdp TYPE int;
 ```
 
-### Пример работы
+### Примеры работы
 
 Выберем фамилии всех режиссеров по имени Боб:
 
