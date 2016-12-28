@@ -90,11 +90,13 @@ CREATE TABLE film_actors (
 * Примеры DML
 1)Вставим заранее подготовленный датасет по режиссерам в формате csv:
 ```sql
-COPY director(director_name,director_last_name) FROM '/home/stefan/director_data.csv' DELIMITER ','CSV HEADER;
+COPY director(director_name,director_last_name) 
+FROM '/home/stefan/director_data.csv' DELIMITER ','CSV HEADER;
 ```
 2)Тоже самое сделаем для стран:
 ```sql
-COPY director(director_name,director_last_name) FROM '/home/stefan/director_data.csv' DELIMITER ','CSV HEADER;
+COPY director(director_name,director_last_name) 
+FROM '/home/stefan/director_data.csv' DELIMITER ','CSV HEADER;
 ```
 ### Примеры работы
 
