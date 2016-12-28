@@ -20,6 +20,7 @@
 
 ### Постановка задачи
 
+1) Задача - создать свою базу данных, хранящую информацию по фильмам 
 
 
 ### Концептуальное проектирование
@@ -99,12 +100,16 @@ FROM '/home/stefan/director_data.csv' DELIMITER ','CSV HEADER;
 COPY countries(country_name, average_gdp) 
 FROM '/home/stefan/countries.csv' DELIMITER ','CSV HEADER;
 ```
-P.S. В процессе вставки, оказалось, что smallint типа недостаточно, и пришлось поменять его для столбца average_gdp в таблице
+P.S. 
+В процессе вставки, оказалось, что smallint типа недостаточно, и пришлось поменять его для столбца average_gdp в таблице
 countries с помощью, опять же, DML оператора:
 ```sql
 ALTER TABLE countries ALTER average_gdp TYPE int;
 ```
 
-### Примеры работы
+### Пример работы
 
+Выберем фамилии всех режиссеров по имени Боб:
+
+![](http://imgur.com/m634OYH)
 
