@@ -88,6 +88,7 @@ CREATE TABLE film_actors (
 );
 ```
 * Примеры DML
+
 1)Вставим заранее подготовленный датасет по режиссерам в формате csv:
 ```sql
 COPY director(director_name,director_last_name) 
